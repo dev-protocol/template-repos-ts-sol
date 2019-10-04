@@ -1,0 +1,7 @@
+{
+	"solidity.linter": "solium",
+	"solidity.packageDefaultDependenciesContractsDirectory": "",
+	"solidity.packageDefaultDependenciesDirectory": "node_modules",
+	"eslint.autoFixOnSave": true,
+	"eslint.validate": ["javascript", {"language": "typescript", "autoFix": true}]
+}
