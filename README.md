@@ -58,5 +58,5 @@ contracts/modules
 Finally, remove unnecessary files:
 
 ```bash
-rm .soliumignore .soliumrc.json truffle-config.js
+rm -rf .soliumignore .soliumrc.json truffle-config.js contracts/ migrations/
 ```
