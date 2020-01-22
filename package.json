@@ -10,7 +10,7 @@
 		"deploy": "truffle migrate --reset --network",
 		"predeploy": "npm run build",
 		"lint": "npm run lint:eslint && npm run lint:solium && npm run lint:format",
-		"lint:eslint": "eslint . --ext .ts,.js --fix --ignore-pattern node_modules/ --ignore-pattern types/",
+		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:solium": "solium --dir . --fix",
 		"lint:format": "prettier --write '**/*.{sol,js,json,md,yml}'",
 		"build": "tsc -p tsconfig.build.json",
