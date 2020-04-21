@@ -11,8 +11,8 @@
 		"plugin:@typescript-eslint/recommended",
 		"xo",
 		"xo-typescript",
-		"plugin:prettier/recommended",
-		"prettier/@typescript-eslint"
+		"prettier/@typescript-eslint",
+		"plugin:prettier/recommended"
 	],
 	"rules": {
 		"prettier/prettier": "error",
