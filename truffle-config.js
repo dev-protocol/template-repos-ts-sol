@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/camelcase */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 require('ts-node/register')
 require('dotenv').config()
 const HDWalletProvider = require('truffle-hdwallet-provider')
@@ -9,8 +11,8 @@ module.exports = {
 	test_file_extension_regexp: /.*\.ts$/,
 	compilers: {
 		solc: {
-			version: '^0.5.9'
-		}
+			version: '^0.5.9',
+		},
 	},
 	networks: {
 		azure: {
@@ -21,7 +23,7 @@ module.exports = {
 				),
 			network_id: '*',
 			gas: 0,
-			gasPrice: 0
-		}
-	}
+			gasPrice: 0,
+		},
+	},
 }
