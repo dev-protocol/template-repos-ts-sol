@@ -31,7 +31,7 @@
 		"ethlint": "1.2.5",
 		"husky": "4.2.5",
 		"prettier": "2.0.5",
-		"prettier-plugin-solidity": "1.0.0-alpha.48",
+		"prettier-plugin-solidity": "1.0.0-alpha.54",
 		"truffle": "5.1.34",
 		"truffle-hdwallet-provider": "1.0.17",
 		"truffle-typings": "1.0.8",
