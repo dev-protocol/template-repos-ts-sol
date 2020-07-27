@@ -5,16 +5,16 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "truffle test test/**/*.ts",
-		"pretest": "npm run generate",
+		"pretest": "yarn generate",
 		"generate": "truffle compile && typechain --target truffle './build/**/*.json'",
 		"deploy": "truffle migrate --network",
-		"predeploy": "npm run build",
-		"lint": "npm run lint:eslint && npm run lint:solium && npm run lint:format",
+		"predeploy": "yarn build",
+		"lint": "yarn lint:eslint && yarn lint:solium && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:solium": "solium --dir . --fix",
 		"lint:format": "prettier --write '**/*.{sol,js,json,md,yml}'",
 		"build": "tsc -p tsconfig.build.json",
-		"prebuild": "npm run generate"
+		"prebuild": "yarn generate"
 	},
 	"author": "",
 	"license": "MPL-2.0",
@@ -43,7 +43,7 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm run lint"
+			"pre-commit": "yarn lint"
 		}
 	}
 }
