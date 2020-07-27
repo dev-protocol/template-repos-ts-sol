@@ -1,4 +1,3 @@
 node_modules/
 types/
 *.js
-!truffle-config.js

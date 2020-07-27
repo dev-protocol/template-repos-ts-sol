@@ -28,12 +28,6 @@
 				"artifacts": "readonly",
 				"contract": "readonly"
 			}
-		},
-		{
-			"files": ["migrations/**/*"],
-			"globals": {
-				"artifacts": "readonly"
-			}
 		}
 	]
 }
