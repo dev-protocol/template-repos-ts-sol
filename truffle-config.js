@@ -1,7 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable @typescript-eslint/camelcase */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-return */
 require('ts-node/register')
 require('dotenv').config()
 const HDWalletProvider = require('truffle-hdwallet-provider')
