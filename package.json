@@ -5,16 +5,18 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "mocha --require ts-node/register 'test/**/*.ts' --timeout 300000 --parallel",
-		"deploy": "node build/scripts/scripts/deploy.js",
 		"pretest": "yarn generate",
-		"generate": "mkdir -p build && waffle waffle-config.json && tsc --build ./tsconfig.json",
+		"generate": "waffle waffle-config.json && tsc --build tsconfig.json",
+		"pregenerate": "yarn clean",
+		"deploy": "node build/scripts/scripts/deploy.js",
 		"predeploy": "yarn build",
 		"lint": "yarn lint:eslint && yarn lint:solium && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
 		"lint:solium": "solium --dir . --fix",
 		"lint:format": "prettier --write '**/*.{sol,js,json,md,yml}'",
 		"build": "tsc -p tsconfig.build.json",
-		"prebuild": "yarn generate"
+		"prebuild": "yarn generate",
+		"clean": "rimraf scripts/**/*.js build"
 	},
 	"author": "",
 	"license": "MPL-2.0",
@@ -39,6 +41,7 @@
 		"mocha": "8.0.1",
 		"prettier": "2.0.5",
 		"prettier-plugin-solidity": "1.0.0-alpha.54",
+		"rimraf": "^3.0.2",
 		"ts-node": "8.10.2",
 		"typescript": "3.9.7",
 		"web3": "1.2.11"
