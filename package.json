@@ -32,7 +32,7 @@
 		"husky": "4.2.5",
 		"prettier": "2.0.5",
 		"prettier-plugin-solidity": "1.0.0-alpha.54",
-		"truffle": "5.1.36",
+		"truffle": "5.1.39",
 		"truffle-hdwallet-provider": "1.0.17",
 		"truffle-typings": "1.0.8",
 		"ts-generator": "0.0.8",
