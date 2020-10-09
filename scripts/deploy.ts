@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
-import {ethers} from 'ethers'
-import Provider = ethers.providers.Provider
+import {ethers, providers} from 'ethers'
+import Provider = providers.Provider
 
 const deployContracts = async (_wallet: ethers.Wallet): Promise<void> => {}
 
