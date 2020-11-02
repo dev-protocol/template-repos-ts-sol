@@ -38,7 +38,7 @@
 		"ethereum-waffle": "3.2.0",
 		"ethlint": "1.2.5",
 		"husky": "4.3.0",
-		"mocha": "8.2.0",
+		"mocha": "8.2.1",
 		"prettier": "2.1.2",
 		"prettier-plugin-solidity": "1.0.0-alpha.59",
 		"rimraf": "3.0.2",
