@@ -11,9 +11,9 @@
 		"exec": "node",
 		"preexec": "yarn build",
 		"deploy": "yarn exec scripts/deploy.js",
-		"lint": "yarn lint:eslint && yarn lint:solium && yarn lint:format",
+		"lint": "yarn lint:eslint && yarn lint:solhint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts,.js --fix",
-		"lint:solium": "solium --dir . --fix",
+		"lint:solhint": "solhint --fix --max-warnings 0 \"contracts/**/*.sol\"",
 		"lint:format": "prettier --write '**/*.{sol,js,json,md,yml}'",
 		"build": "tsc -p tsconfig.build.json",
 		"prebuild": "yarn generate",
@@ -36,7 +36,6 @@
 		"eslint-config-xo-typescript": "0.35.0",
 		"eslint-plugin-prettier": "3.1.4",
 		"ethereum-waffle": "3.2.0",
-		"ethlint": "1.2.5",
 		"husky": "4.3.0",
 		"mocha": "8.2.1",
 		"prettier": "2.1.2",
@@ -49,5 +48,8 @@
 		"hooks": {
 			"pre-commit": "yarn lint"
 		}
+	},
+	"dependencies": {
+		"solhint": "^3.3.1"
 	}
 }
