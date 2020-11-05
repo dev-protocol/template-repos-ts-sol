@@ -3,6 +3,7 @@
 import {ethers, providers} from 'ethers'
 import Provider = providers.Provider
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const deployContracts = async (_wallet: ethers.Wallet): Promise<void> => {}
 
 const getDeployer = (
