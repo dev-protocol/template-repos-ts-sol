@@ -4,7 +4,7 @@
 	"nodeModulesDirectory": "./node_modules",
 	"compilerOptions": {
 		"optimizer": {
-		  "enabled": true
+			"enabled": true
 		}
-	  }
+	}
 }
