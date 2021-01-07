@@ -1,8 +1,8 @@
-import {expect, use} from 'chai'
-import {BigNumber, Contract} from 'ethers'
-import {deployContract, MockProvider, solidity} from 'ethereum-waffle'
+import { expect, use } from 'chai'
+import { BigNumber, Contract } from 'ethers'
+import { deployContract, MockProvider, solidity } from 'ethereum-waffle'
 import * as Example from '../build/Example.json'
-import {toBigNumber} from './lib/number'
+import { toBigNumber } from './lib/number'
 
 use(solidity)
 
