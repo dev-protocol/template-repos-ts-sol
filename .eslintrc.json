@@ -7,18 +7,17 @@
 		"project": "./tsconfig.json",
 		"tsconfigRootDir": "."
 	},
-	"plugins": ["@typescript-eslint", "prettier"],
+	"plugins": ["@typescript-eslint"],
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
 		"plugin:@typescript-eslint/recommended",
 		"xo",
 		"xo-typescript",
-		"prettier/@typescript-eslint",
-		"plugin:prettier/recommended"
+		"prettier",
+		"prettier/@typescript-eslint"
 	],
 	"rules": {
-		"prettier/prettier": "error",
 		"@typescript-eslint/prefer-readonly-parameter-types": "warn"
 	}
 }
