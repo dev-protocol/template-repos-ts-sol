@@ -19,7 +19,7 @@
 	"author": "",
 	"license": "MPL-2.0",
 	"devDependencies": {
-		"@openzeppelin/contracts": "3.3.0",
+		"@openzeppelin/contracts": "3.4.0",
 		"@types/chai": "4.2.14",
 		"@types/dotenv": "8.2.0",
 		"@types/mocha": "8.2.0",
