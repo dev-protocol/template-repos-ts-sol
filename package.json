@@ -40,11 +40,6 @@
 		"ts-node": "9.1.1",
 		"typescript": "4.2.3"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn lint"
-		}
-	},
 	"dependencies": {
 		"solhint": "^3.3.2"
 	}
