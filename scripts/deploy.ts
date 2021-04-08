@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
 import { ethers, providers, ContractFactory } from 'ethers'
 import { config, DotenvParseOutput } from 'dotenv'
 import { Class } from 'type-fest'
