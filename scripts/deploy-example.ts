@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
 import { deploy } from './deploy'
 import { abi, bytecode } from '../build/Example.json'
 
