@@ -14,8 +14,7 @@
 		"plugin:@typescript-eslint/recommended",
 		"xo",
 		"xo-typescript",
-		"prettier",
-		"prettier/@typescript-eslint"
+		"prettier"
 	],
 	"rules": {
 		"@typescript-eslint/prefer-readonly-parameter-types": "warn"
