@@ -18,5 +18,14 @@
 	],
 	"rules": {
 		"@typescript-eslint/prefer-readonly-parameter-types": "warn"
-	}
+	},
+	"overrides": [
+		{
+			"files": ["test/**/*.ts"],
+			"rules": {
+				"@typescript-eslint/no-unsafe-call": "off",
+				"@typescript-eslint/no-unsafe-assignment": "off"
+			}
+		}
+	]
 }
