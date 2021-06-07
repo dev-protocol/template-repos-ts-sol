@@ -33,7 +33,7 @@
 		"eslint-config-xo-typescript": "0.41.1",
 		"ethereum-waffle": "3.3.0",
 		"husky": "6.0.0",
-		"mocha": "8.4.0",
+		"mocha": "9.0.0",
 		"prettier": "2.3.1",
 		"prettier-plugin-solidity": "1.0.0-beta.13",
 		"rimraf": "3.0.2",
