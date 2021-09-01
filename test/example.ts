@@ -1,17 +1,17 @@
+import { ethers } from "hardhat"
 import { expect, use } from 'chai'
-import { BigNumber, Contract } from 'ethers'
-import { deployContract, MockProvider, solidity } from 'ethereum-waffle'
-import * as Example from '../build/Example.json'
+import { BigNumber, Contract, Signer } from 'ethers'
+import { solidity } from 'ethereum-waffle'
 import { toBigNumber } from './lib/number'
 
 use(solidity)
 
 describe('Example', () => {
-	const [wallet] = new MockProvider().getWallets()
 	let example: Contract
 
 	beforeEach(async () => {
-		example = await deployContract(wallet, Example)
+	    const exampleFactory = await ethers.getContractFactory("Example")
+		example = await exampleFactory.deploy()
 	})
 
 	describe('value', () => {
