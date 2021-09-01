@@ -1,6 +1,6 @@
 import { ethers } from "hardhat"
 import { expect, use } from 'chai'
-import { BigNumber, Contract, Signer } from 'ethers'
+import { BigNumber } from 'ethers'
 import { solidity } from 'ethereum-waffle'
 import { toBigNumber } from './lib/number'
 import { Example, Example__factory } from '../typechain'
