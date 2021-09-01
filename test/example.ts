@@ -11,7 +11,7 @@ describe('Example', () => {
 	let example: Example
 
 	beforeEach(async () => {
-	    const exampleFactory = (await ethers.getContractFactory("Example")) as Example__factory
+	        const exampleFactory = (await ethers.getContractFactory("Example")) as Example__factory
 		example = await exampleFactory.deploy()
 	})
 
