@@ -10,6 +10,6 @@
 		"target": "es2019",
 		"outDir": "dist"
 	},
-	"include": ["**/*"],
+	"include": ["./scripts", "./test"],
     "files": ["./hardhat.config.ts"]
 }
