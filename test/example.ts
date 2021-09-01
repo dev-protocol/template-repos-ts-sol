@@ -3,14 +3,15 @@ import { expect, use } from 'chai'
 import { BigNumber, Contract, Signer } from 'ethers'
 import { solidity } from 'ethereum-waffle'
 import { toBigNumber } from './lib/number'
+import { Example, Example__factory } from '../typechain'
 
 use(solidity)
 
 describe('Example', () => {
-	let example: Contract
+	let example: Example
 
 	beforeEach(async () => {
-	    const exampleFactory = await ethers.getContractFactory("Example")
+	    const exampleFactory = (await ethers.getContractFactory("Example")) as Example__factory
 		example = await exampleFactory.deploy()
 	})
 
