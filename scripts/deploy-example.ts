@@ -1,9 +1,16 @@
-/* eslint-disable @typescript-eslint/prefer-readonly-parameter-types */
-// import { deploy } from './deploy'
-// import { abi, bytecode } from '../build/Example.json'
+import { ethers } from 'hardhat'
 
-// void deploy(async (wallet, ContractFactory, envs) => {
-// 	const { CONFIG } = envs
-// 	const factory = new ContractFactory(abi, bytecode, wallet)
-// 	void factory.deploy(CONFIG)
-// })
+async function main() {
+
+	const Example = await ethers.getContractFactory("Example");
+	const example = await Example.deploy();
+
+	console.log("Token address:", example.address);
+}
+
+main()
+  	.then(() => process.exit(0))
+  	.catch((error) => {
+    	console.error(error);
+    	process.exit(1);
+})
