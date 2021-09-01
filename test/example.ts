@@ -10,7 +10,7 @@ describe('Example', () => {
 	let example: Contract
 
 	beforeEach(async () => {
-	    const exampleFactory = await ethers.getContractFactory("Example")
+	        const exampleFactory = await ethers.getContractFactory("Example")
 		example = await exampleFactory.deploy()
 	})
 
