@@ -4,9 +4,9 @@
 	"description": "Template repository for using TypeScript and Solidity",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha --require ts-node/register 'test/**/*.ts' --timeout 300000 --parallel",
+		"test": "hardhat test",
 		"pretest": "yarn generate",
-		"generate": "waffle waffle-config.json",
+		"generate": "hardhat compile",
 		"pregenerate": "yarn clean",
 		"lint": "yarn lint:eslint && yarn lint:solhint && yarn lint:format",
 		"lint:eslint": "eslint . --ext .ts --fix",
