@@ -7,7 +7,9 @@
 		"lib": ["es2019"],
 		"strict": true,
 		"skipLibCheck": true,
-		"target": "es2019"
+		"target": "es2019",
+		"outDir": "dist"
 	},
-	"include": ["**/*"]
+	"include": ["./scripts", "./test"],
+	"files": ["./hardhat.config.ts"]
 }
