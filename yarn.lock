@@ -2946,7 +2946,7 @@ defined@~1.0.0:
   resolved "https://registry.yarnpkg.com/defined/-/defined-1.0.0.tgz#c98d9bcef75674188e110969151199e39b1fa693"
   integrity sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=
 
-del-cli@^4.0.1:
+del-cli@4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/del-cli/-/del-cli-4.0.1.tgz#2303ccaa45708ee8c6211568344cf87336abf30a"
   integrity sha512-KtR/6cBfZkGDAP2NA7z+bP4p1OMob3wjN9mq13+SWvExx6jT9gFWfLgXEeX8J2B47OKeNCq9yTONmtryQ+m+6g==
