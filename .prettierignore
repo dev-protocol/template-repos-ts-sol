@@ -1,2 +1,3 @@
-build
-contracts/modules
+artifacts
+cache
+typechain
