@@ -2,10 +2,7 @@
 pragma solidity =0.8.7;
 
 import {SafeMath} from "@openzeppelin/contracts/utils/math/SafeMath.sol";
-/* prettier-ignore */
-import {
-	Initializable
-} from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import {Initializable} from "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 contract Example is Initializable {
 	using SafeMath for uint256;
