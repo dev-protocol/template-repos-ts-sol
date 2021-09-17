@@ -1,6 +1,5 @@
 import { ethers } from 'hardhat'
-import { deployProxy } from '../test/utils'
-import { deployAdmin } from './utils'
+import { deployAdmin, deployProxy } from './utils'
 
 async function main() {
 	const Example = await ethers.getContractFactory('Example')
