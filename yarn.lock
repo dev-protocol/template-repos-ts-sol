@@ -4635,10 +4635,10 @@ hard-rejection@^2.1.0:
   resolved "https://registry.yarnpkg.com/hard-rejection/-/hard-rejection-2.1.0.tgz#1c6eda5c1685c63942766d79bb40ae773cecd883"
   integrity sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==
 
-hardhat@2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.6.5.tgz#61d3e22da34e1b175bbe599f77396b32f9788b58"
-  integrity sha512-sBhREWZjQTtR/KMMp2F3ySuDqL0norjNq68geR3nlXRHXYKuNKeL7xqVsmldekt3sVB5Wh1WX7xDX79kvUr+fA==
+hardhat@2.6.6:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/hardhat/-/hardhat-2.6.6.tgz#11d2dc4c1659fcbb8632de9399b1b4999f8b3628"
+  integrity sha512-GneZAwvNxf3cNobYTmMSp2qGX/yJyUmHD/xjW+8zF2AgWkLS33CHmGn4aRFKqfjsk7BS7FU6jqMmmZhHHO3gUw==
   dependencies:
     "@ethereumjs/block" "^3.4.0"
     "@ethereumjs/blockchain" "^5.4.0"
