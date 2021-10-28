@@ -1113,10 +1113,13 @@
   dependencies:
     ethers "^5.0.2"
 
-"@typechain/ethers-v5@^7.0.1":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-7.0.1.tgz#f9ae60ae5bd9e8ea8a996f66244147e8e74034ae"
-  integrity sha512-mXEJ7LG0pOYO+MRPkHtbf30Ey9X2KAsU0wkeoVvjQIn7iAY6tB3k3s+82bbmJAUMyENbQ04RDOZit36CgSG6Gg==
+"@typechain/ethers-v5@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@typechain/ethers-v5/-/ethers-v5-8.0.0.tgz#1321a441d473b588826561daa9e57be889e67c93"
+  integrity sha512-i2H/G6YZs8fAxXwQ2jtkrsuH9mbZ6TqIzt0j208dX0rnDD66Dllk9lJcJpSuLYzTvf+o5tNe75si1dFLbjMmZQ==
+  dependencies:
+    lodash "^4.17.15"
+    ts-essentials "^7.0.1"
 
 "@typechain/hardhat@^2.3.0":
   version "2.3.0"
