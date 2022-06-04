@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { expect, use } from 'chai'
 import { BigNumber } from 'ethers'
 import { solidity } from 'ethereum-waffle'

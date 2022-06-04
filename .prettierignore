@@ -1,6 +1,5 @@
 artifacts
 cache
-typechain
 artifacts/
-typechain/
+typechain-types/
 cache/
