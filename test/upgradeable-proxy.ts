@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { expect, use } from 'chai'
 import { ethers } from 'hardhat'
 import { solidity } from 'ethereum-waffle'
 import { deploy, deployProxy } from './utils'
-import { Example, UpgradeableProxy } from '../typechain'
+import { Example, UpgradeableProxy } from '../typechain-types'
 
 use(solidity)
 

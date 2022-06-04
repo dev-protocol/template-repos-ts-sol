@@ -3,7 +3,7 @@ import { expect, use } from 'chai'
 import { BigNumber } from 'ethers'
 import { solidity } from 'ethereum-waffle'
 import { deploy, toBigNumber } from './utils'
-import { Example } from '../typechain'
+import { Example } from '../typechain-types'
 
 use(solidity)
 
