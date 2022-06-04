@@ -75,4 +75,4 @@ package-lock.json
 # outout of hardhat
 artifacts
 cache
-typechain
+typechain-types

@@ -4,7 +4,7 @@ import {
 	Admin__factory,
 	UpgradeableProxy,
 	UpgradeableProxy__factory,
-} from '../typechain'
+} from '../typechain-types'
 
 export const deployAdmin = async (): Promise<Admin> => {
 	const adminFactory = (await ethers.getContractFactory(
