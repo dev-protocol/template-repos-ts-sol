@@ -54,11 +54,13 @@ const config: HardhatUserConfig = {
 	},
 	etherscan: {
 		apiKey: {
-			mainnet: process.env.ETHERSCAN_KEY,
-			arbitrumOne: process.env.ARBISCAN_KEY,
-			arbitrumTestnet: process.env.ARBISCAN_RINKEBY_KEY,
-			polygon: process.env.POLYGONSCAN_KEY,
-			polygonMumbai: process.env.POLYGONSCAN_MUMBAI_KEY,
+			...((k) => (k ? { mainnet: k } : undefined))(process.env.ETHERSCAN_KEY),
+			...((k) => (k ? { arbitrumOne: k, arbitrumTestnet: k } : undefined))(
+				process.env.ARBISCAN_KEY
+			),
+			...((k) => (k ? { polygon: k, polygonMumbai: k } : undefined))(
+				process.env.POLYGONSCAN_KEY
+			),
 		},
 	},
 }
