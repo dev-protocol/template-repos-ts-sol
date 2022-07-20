@@ -2,8 +2,8 @@ import { ethers } from 'hardhat'
 import { deployAdmin, deployProxy } from './utils'
 
 async function main() {
-	const Example = await ethers.getContractFactory('Example')
-	const example = await Example.deploy()
+	const exampleContract = await ethers.getContractFactory('Example')
+	const example = await exampleContract.deploy()
 
 	const admin = await deployAdmin()
 
