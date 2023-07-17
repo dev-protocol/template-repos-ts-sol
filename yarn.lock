@@ -888,14 +888,6 @@
     tweetnacl "^1.0.3"
     tweetnacl-util "^0.15.1"
 
-"@morgan-stanley/ts-mocking-bird@^0.6.2":
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/@morgan-stanley/ts-mocking-bird/-/ts-mocking-bird-0.6.4.tgz#2e4b60d42957bab3b50b67dbf14c3da2f62a39f7"
-  integrity sha512-57VJIflP8eR2xXa9cD1LUawh+Gh+BVQfVu0n6GALyg/AqV/Nz25kDRvws3i9kIe1PTrbsZZOYpsYp6bXPd6nVA==
-  dependencies:
-    lodash "^4.17.16"
-    uuid "^7.0.3"
-
 "@noble/hashes@1.1.2", "@noble/hashes@~1.1.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.1.2.tgz#e9e035b9b166ca0af657a7848eb2718f0f22f183"
@@ -1462,9 +1454,9 @@
     "@types/node" "*"
 
 "@types/prettier@^2.1.1":
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.2.tgz#6c2324641cc4ba050a8c710b2b251b377581fbf0"
-  integrity sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.3.tgz#3e51a17e291d01d17d3fc61422015a933af7a08f"
+  integrity sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==
 
 "@types/readable-stream@^2.3.13":
   version "2.3.15"
@@ -3804,7 +3796,7 @@ lodash.truncate@^4.4.2:
   resolved "https://registry.yarnpkg.com/lodash.truncate/-/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
   integrity sha512-jttmRe7bRse52OsWIMDLaXxWqRAmtIUccAQ3garviCqJjafXOfNMO0yMfNpdD6zbGaTU0P5Nz7e7gAT6cKmJRw==
 
-lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.16, lodash@^4.17.21:
+lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -4986,11 +4978,10 @@ ts-api-utils@^1.0.1:
   integrity sha512-lC/RGlPmwdrIBFTX59wwNzqh7aR2otPNPR/5brHZm/XKFYKsfqxihXUe9pU3JI+3vGkl+vyCoNNnPhJn3aLK1A==
 
 ts-command-line-args@^2.2.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/ts-command-line-args/-/ts-command-line-args-2.5.0.tgz#7eeed3a6937b2612ea08a0794cf9d43fbbea89c4"
-  integrity sha512-Ff7Xt04WWCjj/cmPO9eWTJX3qpBZWuPWyQYG1vnxJao+alWWYjwJBc5aYz3h5p5dE08A6AnpkgiCtP/0KXXBYw==
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/ts-command-line-args/-/ts-command-line-args-2.5.1.tgz#e64456b580d1d4f6d948824c274cf6fa5f45f7f0"
+  integrity sha512-H69ZwTw3rFHb5WYpQya40YAX2/w7Ut75uUECbgBIsLmM+BNuYnxsltfyyLMxy6sEeKxgijLTnQtLd0nKd6+IYw==
   dependencies:
-    "@morgan-stanley/ts-mocking-bird" "^0.6.2"
     chalk "^4.1.0"
     command-line-args "^5.1.1"
     command-line-usage "^6.1.0"
@@ -5085,9 +5076,9 @@ type-fest@^1.0.1, type-fest@^1.2.1, type-fest@^1.2.2:
   integrity sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==
 
 typechain@^8.0.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/typechain/-/typechain-8.2.0.tgz#bd4fc8f111d4405e36858bae6f744604617b60f3"
-  integrity sha512-tZqhqjxJ9xAS/Lh32jccTjMkpx7sTdUVVHAy5Bf0TIer5QFNYXotiX74oCvoVYjyxUKDK3MXHtMFzMyD3kE+jg==
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/typechain/-/typechain-8.3.0.tgz#d95566de822332651152bd682ed1ec7b0e1b8610"
+  integrity sha512-AxtAYyOA7f2p28/JkcqrF+gnzam94VNTIbXcaUKodkrKzMX6P/XqBaP6d/OPuBZOi0WgOOmkg1zOSojX8uGkOg==
   dependencies:
     "@types/prettier" "^2.1.1"
     debug "^4.3.1"
@@ -5168,11 +5159,6 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-uuid@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
-  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
 
 uuid@^8.3.2:
   version "8.3.2"
