@@ -50,7 +50,7 @@
 	"dependencies": {
 		"@openzeppelin/contracts-upgradeable": "^4.4.2",
 		"@typechain/ethers-v5": "^11.0.0",
-		"@typechain/hardhat": "^7.0.0",
+		"@typechain/hardhat": "^8.0.0",
 		"solhint": "^3.3.2",
 		"typechain": "^8.0.0"
 	}
