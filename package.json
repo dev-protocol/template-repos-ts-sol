@@ -30,7 +30,7 @@
 		"@types/node": "20.11.0",
 		"@typescript-eslint/eslint-plugin": "6.18.1",
 		"@typescript-eslint/parser": "6.18.1",
-		"chai": "4.4.0",
+		"chai": "4.4.1",
 		"del-cli": "5.1.0",
 		"dotenv": "16.3.1",
 		"eslint": "8.56.0",
