@@ -2,7 +2,6 @@
 	"name": "template-repos-ts-sol",
 	"version": "1.0.0",
 	"description": "Template repository for using TypeScript and Solidity",
-	"type": "module",
 	"scripts": {
 		"test": "hardhat test",
 		"pretest": "yarn generate",
