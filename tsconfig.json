@@ -4,12 +4,12 @@
 		"resolveJsonModule": true,
 		"module": "commonjs",
 		"moduleResolution": "node",
-		"lib": ["es2019"],
+		"lib": ["es2019", "es2020", "esnext"],
 		"strict": true,
 		"skipLibCheck": true,
-		"target": "es2019",
+		"target": "es2020",
 		"outDir": "dist"
 	},
-	"include": ["./scripts", "./test"],
-	"files": ["./hardhat.config.ts"]
+	"include": ["./scripts", "./test", "./typechain-types"],
+	"files": ["./hardhat.config.cts"]
 }

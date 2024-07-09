@@ -1,21 +1,13 @@
-import { ethers } from 'hardhat'
-import { deployAdmin, deployProxy } from './utils'
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import { ethers, upgrades } from 'hardhat'
 
 async function main() {
 	const exampleContract = await ethers.getContractFactory('Example')
-	const example = await exampleContract.deploy()
+	const example = await upgrades.deployProxy(exampleContract)
+	await example.waitForDeployment()
 
-	const admin = await deployAdmin()
-
-	const upgradeableProxy = await deployProxy(
-		example.address,
-		admin.address,
-		ethers.utils.arrayify('0x')
-	)
-
-	console.log('Example address:', example.address)
-	console.log('Admin address:', admin.address)
-	console.log('UpgradeableProxy address:', upgradeableProxy.address)
+	console.log('Example address:', await example.getAddress())
 }
 
 main()

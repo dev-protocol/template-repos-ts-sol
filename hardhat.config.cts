@@ -1,8 +1,6 @@
-import '@typechain/hardhat'
-import '@nomiclabs/hardhat-ethers'
-import '@nomiclabs/hardhat-waffle'
-import '@nomiclabs/hardhat-etherscan'
-import { HardhatUserConfig } from 'hardhat/config'
+import '@nomicfoundation/hardhat-toolbox'
+import '@openzeppelin/hardhat-upgrades'
+import { type HardhatUserConfig } from 'hardhat/config'
 import * as dotenv from 'dotenv'
 
 dotenv.config()
@@ -12,7 +10,7 @@ const mnemnoc =
 
 const config: HardhatUserConfig = {
 	solidity: {
-		version: '0.8.9',
+		version: '0.8.24',
 		settings: {
 			optimizer: {
 				enabled: true,
@@ -56,10 +54,10 @@ const config: HardhatUserConfig = {
 		apiKey: {
 			...((k) => (k ? { mainnet: k } : undefined))(process.env.ETHERSCAN_KEY),
 			...((k) => (k ? { arbitrumOne: k, arbitrumTestnet: k } : undefined))(
-				process.env.ARBISCAN_KEY
+				process.env.ARBISCAN_KEY,
 			),
 			...((k) => (k ? { polygon: k, polygonMumbai: k } : undefined))(
-				process.env.POLYGONSCAN_KEY
+				process.env.POLYGONSCAN_KEY,
 			),
 		},
 	},

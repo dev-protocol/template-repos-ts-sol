@@ -12,10 +12,10 @@ export const deploy = async <C extends Contract>(name: string): Promise<C> => {
 export const deployProxy = async (
 	logic: string,
 	admin: string,
-	data: Readonly<Uint8Array>
+	data: Readonly<Uint8Array>,
 ): Promise<UpgradeableProxy> => {
 	const factory = (await ethers.getContractFactory(
-		'UpgradeableProxy'
+		'UpgradeableProxy',
 	)) as UpgradeableProxy__factory
 	const contract = await factory.deploy(logic, admin, data)
 	await contract.deployed()

@@ -1,50 +1,39 @@
-import { expect, use } from 'chai'
-import { BigNumber } from 'ethers'
-import { solidity } from 'ethereum-waffle'
-import { deploy, toBigNumber } from './utils'
-import { Example } from '../typechain-types'
-
-use(solidity)
+import { expect } from 'chai'
+import { ethers, upgrades } from 'hardhat'
 
 describe('Example', () => {
-	describe('value', () => {
-		it('0 by default', async () => {
-			const example = await deploy<Example>('Example')
-			const value: BigNumber = await example.value()
-			expect(value.toString()).to.equal('0')
-		})
-	})
-
 	describe('initialize', () => {
 		describe('success', () => {
 			it('initialize value', async () => {
-				const example = await deploy<Example>('Example')
-				await example.initialize(3)
-				const value: BigNumber = await example.value()
-				expect(value.toString()).to.equal('3')
+				const Example = await ethers.getContractFactory('Example')
+				const example = await upgrades.deployProxy(Example, [3n])
+				const value: bigint = await example.value()
+				expect(value).to.equal(3n)
 			})
 		})
 		describe('fail', () => {
 			it('should fail to initialize when already initialized', async () => {
-				const example = await deploy<Example>('Example')
-				await example.initialize(3)
+				const Example = await ethers.getContractFactory('Example')
+				const example = await upgrades.deployProxy(Example, [3n])
 
-				await expect(example.initialize(6)).to.be.revertedWith(
-					'Initializable: contract is already initialized'
+				await expect(example.initialize(6)).to.be.revertedWithCustomError(
+					example,
+					'InvalidInitialization',
 				)
-				const value: BigNumber = await example.value()
-				expect(value.toString()).to.equal('3')
+				const value: bigint = await example.value()
+				expect(value).to.equal(3n)
 			})
 		})
 	})
 
 	describe('add', () => {
 		it('Add the passed value to `value`', async () => {
-			const example = await deploy<Example>('Example')
-			await example.add(toBigNumber(10).pow(18))
-			const value: BigNumber = await example.value()
+			const Example = await ethers.getContractFactory('Example')
+			const example = await upgrades.deployProxy(Example, [1n])
+			await example.add(10n)
+			const value: bigint = await example.value()
 
-			expect(value.toString()).to.equal(toBigNumber(10).pow(18).toString())
+			expect(value).to.equal(11n)
 		})
 	})
 })
