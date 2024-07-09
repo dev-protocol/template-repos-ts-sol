@@ -4,6 +4,10 @@
 		{
 			"matchPackagePatterns": ["*"],
 			"automerge": true
+		},
+		{
+			"packageNames": ["chai"],
+			"allowedVersions": "< 5.0.0"
 		}
 	]
 }

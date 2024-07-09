@@ -67,7 +67,9 @@ types
 
 # output of tsc
 *.js
+*.cjs
 !truffle-config.js
+!eslint.config.js
 
 # use yarn
 package-lock.json
