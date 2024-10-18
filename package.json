@@ -40,7 +40,7 @@
 		"chai": "4",
 		"del-cli": "6.0.0",
 		"dotenv": "16.4.5",
-		"eslint": "9.12.0",
+		"eslint": "9.13.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-config-xo": "0.46.0",
 		"eslint-config-xo-typescript": "7.0.0",
