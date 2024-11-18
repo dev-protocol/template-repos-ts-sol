@@ -47,7 +47,7 @@
 		"ethers": "6.13.4",
 		"hardhat": "2.22.16",
 		"hardhat-gas-reporter": "^2.2.0",
-		"husky": "9.1.6",
+		"husky": "9.1.7",
 		"prettier": "3.3.3",
 		"prettier-plugin-solidity": "1.4.1",
 		"solhint": "^5.0.1",
