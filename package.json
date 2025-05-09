@@ -43,7 +43,7 @@
 		"eslint": "9.26.0",
 		"eslint-config-prettier": "10.1.3",
 		"eslint-config-xo": "0.47.0",
-		"eslint-config-xo-typescript": "8.0.0",
+		"eslint-config-xo-typescript": "8.0.1",
 		"ethers": "6.14.0",
 		"hardhat": "2.24.0",
 		"hardhat-gas-reporter": "^2.2.0",
